@@ -9,17 +9,31 @@
 </head>
 
 <body>
-  <div>
-    <label for="name">
-      First Name<input type="text" name="name" id="name" placeholder="Example: Daniel">
-    </label>
-    <label for="lastname">
-      Last Name<input type="text" name="lastname" id="lastname" placeholder="Example: Towers">
-    </label>
-    <label for="age">
-      Age<input type="number" name="age" id="age" placeholder="Example: Daniel">
-    </label>
-  </div>
+  <section class="page">
+    <h1>Registration</h1>
+    <form action="">
+      <label for="name">
+        First Name<input type="text" name="name" id="name" placeholder="Example: Daniel" required>
+      </label>
+      <label for="lastname">
+        Last Name<input type="text" name="lastname" id="lastname" placeholder="Example: Towers">
+      </label>
+      <label for="age">
+        Age<input type="number" name="age" id="age" placeholder="Example: 1-99" max="99" required>
+      </label>
+      <label for="phone">
+        number <input type="tel" name="phone" id="phone" placeholder="+123 456 789">
+      </label>
+      <label for="email">
+        Email<input type="email" name="email" id="email" placeholder="user@example.com">
+      </label>
+      <label for="checkbox">
+        I accept the terms and conditions<input type="checkbox" name="checkbox" id="checkbox">
+      </label>
+      <button>Submit</button>
+    </form>
+
+  </section>
 
 </body>
 
