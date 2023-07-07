@@ -1,0 +1,10 @@
+* {
+  margin: 0 auto;
+  height: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 500px;
+  height: 100vh;
+}
