@@ -14,6 +14,9 @@ fr: significa que podemos crear nuestras columnas de manera que si ponemos 1fr s
 
 ## Medidas minimas y maximas
 
+En este caso podremos usar las propiedades grid-template-columns y grid-template-rows con la unidad minmax() de acuerdo a lo que queramos en nuestra celda. Por ejemplo, con esta unidad podremos establecer un tamaño minimo y un tamaño maxmimo a nuestras columnas y celdas separados por una coma
 
+### Ejemplo minmax()
+grid-template-columns: minmax(200px, 1fr) 200px; Con esta propiedad vamos a establecer que el minimo de la primera columna van a ser 200px, es decir, que menos de eso no podra estar. Y el maximo de 1 fraccion. Es decir que ocupara el espacio necesario sin perjudicar a los 200px de la siguiente columna.
 
 ## Notas
