@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&family=VT323&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(152, 33, 118, 0.9), rgb(152, 33, 118), rgb(175, 1, 113), rgb(241, 26, 123));
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px auto auto 100px;
+    grid-template-areas: "header header header"
+        "section1 section1 aside"
+        "section1 section1 ."
+        "footer footer footer";
+    gap: 15px;
+}
+
+header {
+    width: 100%;
+    background-color: tomato;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    grid-area: header;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+}
+
+.section-1 {
+    grid-area: section1;
+}
+
+.aside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-areas: "header header"
+        "yt ig"
+        "tw dc";
+    grid-area: aside;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.aside h2 {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px #FFE5AD;
+    grid-area: header;
+}
+
+.aside .yt {
+    box-shadow: 4px 4px 10px #FFE5AD;
+    border-radius: 16px;
+    grid-area: yt;
+    width: 100px;
+}
+
+.aside .ig {
+    box-shadow: 4px 4px 10px #FFE5AD;
+    border-radius: 16px;
+    grid-area: ig;
+    width: 100px;
+}
+
+.aside .tw {
+    box-shadow: 4px 4px 10px #FFE5AD;
+    border-radius: 16px;
+    grid-area: tw;
+    width: 100px;
+}
+
+.aside .dc {
+    box-shadow: 4px 4px 10px #FFE5AD;
+    border-radius: 16px;
+    grid-area: dc;
+    width: 100px;
+}
+
+
+footer {
+    grid-area: footer;
+}
